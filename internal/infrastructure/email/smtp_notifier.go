@@ -7,7 +7,7 @@ import (
 	"html/template"
 	"net/smtp"
 
-	"github.com/yourusername/order-service/internal/domain"
+	"github.com/hsibAD/order-service/internal/domain"
 )
 
 type SMTPConfig struct {

@@ -47,6 +47,22 @@ type OrderItem struct {
 	TotalPrice  float64
 }
 
+type DeliveryAddress struct {
+	ID         string
+	UserID     string
+	Street     string
+	City       string
+	State      string
+	Country    string
+	PostalCode string
+}
+
+type DeliverySlot struct {
+	StartTime time.Time
+	EndTime   time.Time
+	Available bool
+}
+
 func NewOrder(userID string, items []OrderItem, deliveryAddress *DeliveryAddress, deliveryTime time.Time) (*Order, error) {
 	if userID == "" {
 		return nil, ErrInvalidUserID

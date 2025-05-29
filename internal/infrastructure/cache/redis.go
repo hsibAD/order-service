@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/yourusername/order-service/internal/domain"
+	"github.com/hsibAD/order-service/internal/domain"
 )
 
 type RedisCache struct {
